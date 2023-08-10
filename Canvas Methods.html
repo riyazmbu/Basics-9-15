@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Methods</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+
+        }
+        canvas{
+            margin-left:25%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas" width="600" height="600" style="border: 2px solid rgb(0, 0, 0);" >
+        <script>
+            var c=document.getElementById("mycanvas");
+            var ct=mycanvas.getContext("2d");
+            ct.fillStyle="pink";
+            ct.fillRect(100,100,400,50);
+            ct.moveTo(100,100);
+            ct.lineTo(100,500);
+            ct.moveTo(500,100);
+            ct.lineTo(500,500);
+            ct.moveTo(100,500);
+            ct.lineTo(500,500);
+            ct.strokeStyle="black";
+            ct.stroke();
+            ct.font="20px blue";
+            ct.fillStyle="red"
+            ct.fillText("Circle",260,225);
+            ct.beginPath();
+            ct.arc(290,310,50,0,360);
+            ct.fillRect(290,310,50,3)
+            ct.stroke();
+        </script>
+    </canvas>
+    
+</body>
+</html>

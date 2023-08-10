@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleting your Account</title>
+    <style>
+        #header{
+            margin:-2%;
+            background-color: #0073b1;
+            height:100px;
+            width:100%;
+            padding: 0 36px;
+            text-align: center;
+        }
+        span{
+            
+            font-size: xx-large;
+            font-weight: bold;
+            color: whitesmoke;
+               
+        }
+        fieldset{
+            height: fit-content;
+            width: 50%;
+        }
+        #form{
+            padding-left: 30%;
+        
+        }
+        #submit{
+            padding: 10px;
+            background-color: #0073b1;
+            color: white;
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <br><br><br>
+       <span>Deleting your Account</span>
+    </div>
+    <br><br><br>
+<div id="form">
+<form action="#">
+    <fieldset>
+        <legend style="text-align: center;">Delete your Account</legend>
+        <label for="email">Email:</label>
+        <input type="email" disabled value="riyazmbu@gmail.com"><br><br>
+        <label for="picklist">Reason for Deleting Account:</label>
+        <select name="reasons" id="reasons">
+            <option value="1">Addicted to the App</option>
+            <option value="2">Not Intrested</option>
+            <option value="3">Have Exams</option>
+            <option value="4">Shifted to Another Platform</option>
+            <option value="5">other</option>
+        </select>
+        <br><br>
+        <label for="complaints">Any Complaints:</label><br><br>
+        <textarea name="" id="" cols="70" rows="10"></textarea>
+        <br><br>
+        <label for="password">Confirm Password:</label>
+        <input type="password">
+        <br><br>
+        <div style="text-align: center;">
+            <input type="submit" id="submit">
+        </div>
+    </fieldset>
+</form>
+</div>
+</body>
+</html>

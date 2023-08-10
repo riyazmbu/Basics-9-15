@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Triflag</title>
+    <style>
+        canvas{
+            
+            margin-left: 15%;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="Myc" width="800" height="700" >
+        <script>
+            var c=document.getElementById("Myc");
+            var ct=Myc.getContext("2d");
+            ct.fillStyle="red";
+            ct.fillRect(250,650,320,50);
+            ct.moveTo(400,50);
+            ct.lineTo(400,650);
+            ct.strokeStyle="black";
+            ct.stroke();
+            ct.fillRect(400,50,220,30);
+            ct.fillStyle="yellow";
+            ct.fillRect(400,75,220,30);
+            ct.fillStyle="orange";
+            ct.fillRect(400,100,220,30);
+        </script>
+    </canvas>
+</body>
+</html>
